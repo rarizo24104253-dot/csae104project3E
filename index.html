@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming | Submissions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #0b1020;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #a78bfa;
+            letter-spacing: 1px;
+        }
+
+        .header-text {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 25px;
+        }
+
+        .intro {
+            margin-bottom: 50px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(167, 139, 250, 0.3);
+            border-radius: 30px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            background: linear-gradient(90deg, #a78bfa, #38bdf8);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .description {
+            color: #9ca3af;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+
+        .week-count {
+            color: #9ca3af;
+            font-size: 13px;
+        }
+
+        .submissions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #151d32;
+            border: 1px solid #28344d;
+            border-radius: 18px;
+            padding: 28px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #8b5cf6;
+            box-shadow: 0 15px 35px rgba(139, 92, 246, 0.15);
+        }
+
+        .week-number {
+            color: #a78bfa;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #7c3aed, #2563eb);
+            border-radius: 14px;
+            font-size: 25px;
+            margin: 22px 0;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .view-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #6d4aff;
+            padding: 12px 20px;
+            border-radius: 9px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .view-btn:hover {
+            background: #8b5cf6;
+            transform: translateX(4px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 80px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            main {
+                margin: 55px auto;
+            }
+
+            .header-text {
+                display: none;
+            }
+
+            .section-title {
+                align-items: flex-start;
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main>
+        <section class="intro">
+            <div class="tag">WEB PROGRAMMING</div>
+
+            <h1>My Weekly <span>Submissions.</span></h1>
+
+            <p class="description">
+                Welcome to my web programming portfolio.
+                Explore my weekly activities, projects, and coding exercises.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>My Submissions</h2>
+                <span class="week-count">04 WEEKS AVAILABLE</span>
+            </div>
+
+            <div class="submissions">
+
+                <div class="card">
+                    <div class="week-number">WEEK 01</div>
+                    <div class="icon"></div>
+                    <h3>Week 1</h3>
+                    <p>Explore my first set of web programming activities and exercises.</p>
+                    <a href="week1/" class="view-btn">View Submission →</a>
+                </div>
+
+                <div class="card">
+                    <div class="week-number">WEEK 02</div>
+                    <div class="icon"></div>
+                    <h3>Week 2</h3>
+                    <p>Discover my next coding activities, tasks, and programming outputs.</p>
+                    <a href="week2/" class="view-btn">View Submission →</a>
+                </div>
+
+                <div class="card">
+                    <div class="week-number">WEEK 03</div>
+                    <div class="icon"></div>
+                    <h3>Week 3</h3>
+                    <p>Check out my third week of programming activities and projects.</p>
+                    <a href="week3/" class="view-btn">View Submission →</a>
+                </div>
+
+                <div class="card">
+                    <div class="week-number">WEEK 04</div>
+                    <div class="icon"></div>
+                    <h3>Week 4</h3>
+                    <p>See my latest coding exercises and web development outputs.</p>
+                    <a href="week4/" class="view-btn">View Submission →</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
